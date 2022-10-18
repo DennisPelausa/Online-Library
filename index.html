@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Online Bookstore</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+
+	<header>
+        <div id="brand"><h2><a href="#">Books4U</a></h2></div>
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#catalog">Catalog</a></li>
+            <li><a href=#">About</a></li>
+            <li id="#"><a href="login.html" >Login</a></li>
+            <li id="#"><a href="login.html">Signup</a></li>
+			<li id="#"><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+          </ul>
+        </nav>
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+          <ul class="mobile-menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Catalog</a></li>
+            <li><a href="#">About</a></li>
+            <li id="login"><a href="login.html" >Login</a></li>
+            <li id="signup"><a href="login.html">Signup</a></li>
+			<li id="#"><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+          </ul>
+        </div>
+      </header>
+      <script src="index.js"></script>
+
+
+	<section class="hero">
+		<div class="background-image" style="background-image: url(images/hero.jpg);"></div>
+		<h1>Collection of Classic Literature from Books4U</h1>
+		<h3>See our catalog</h3>
+		<a href="#catalog" class="btn">Full Catalog</a>
+	</section>
+
+
+	<section class="our-work">
+		<h3 class="title" id="catalog">Classic Catalog</h3>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad repellat perferendis pariatur, nihil sint et accusamus modi eveniet quaerat deleniti, voluptatem dolorem! Aut quidem architecto error provident accusantium dignissimos ut?</p>
+		<hr>
+		<div class="main-content">
+
+			<!-- You only need this form and the form-search.css -->
+	
+			<form class="form-search" method="get" action="#">
+				<input type="search" name="search" placeholder="I am looking for..">
+				<button type="submit">Search</button>
+				<i class="fa fa-search"></i>
+			</form>
+	
+		</div>
+		<div class="book-container">
+			<div class="card">
+				<img class="book-cover" src="images/image1.jpg" alt="">
+				<div class="book-info">
+					<p>
+						Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+						Ullam aspernatur odio itaque <span></span> earum laborum iusto veniam 
+						molestias ad. Autem tempore cupiditate, fuga 
+						delectus architecto iste libero! Voluptate, laudantium ratione.</span>
+						<span class="read-more"><a href="#">Read More..</a></span>
+					</p>
+					<!-- inside of div under the image -->
+					<!-- Text for button set to span for adjustment -->
+						<div class="buttons">
+						<a class="btn-cart" href="#"">
+						<i class="fa-solid fa-cart-shopping"></i> <span>Add to cart</span>
+						</a>
+						<a class="btn-wishlist" href="#">
+						<i class="fa-solid fa-star"></i><span>Wishlist</span>
+						</a>
+						<a class="btn-buy" href="cart.html">
+						Buy Me!
+						</a>
+						</div>
+				</div>
+			</div>
+			<div class="card">
+				<img class="book-cover" src="images/image2.jpg" alt="">
+				<div class="book-info">
+					<p>
+						Lorem ipsum dolor  <span></span> earum laborum iusto veniam 
+						molestias ad. Autem tempore cupiditate, fuga 
+						delectus architecto iste libero! Voluptate, laudantium ratione.</span>
+						<span class="read-more"><a href="#">Read More..</a></span>
+					</p>
+					<!-- inside of div under the image -->
+					<!-- Text for button set to span for adjustment -->
+						<div class="buttons">
+						<a class="btn-cart" href="#"">
+						<i class="fa-solid fa-cart-shopping"></i><span>Add to cart</span>
+						</a>
+						<a class="btn-wishlist" href="#">
+						<i class="fa-solid fa-star"></i><span>Wishlist</span>
+						</a>
+						<a class="btn-buy" href="cart.html">
+						Buy Me!
+						</a>
+						</div>
+				</div>
+			</div>
+			<div class="card">
+				<img class="book-cover" src="images/image3.jpg" alt="">
+				<div class="book-info">
+					<p>
+						Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+						Ullam aspernatur odio itaque <span></span> earum laborum iusto veniam 
+						molestias ad. Autem tempore cupiditate, fuga 
+						delectus architecto iste libero! Voluptate, laudantium ratione.</span>
+						<span class="read-more"><a href="#">Read More..</a></span>
+					</p>
+					<!-- inside of div under the image -->
+					<!-- Text for button set to span for adjustment -->
+						<div class="buttons">
+						<a class="btn-cart" href="#"">
+						<i class="fa-solid fa-cart-shopping"></i><span>Add to cart</span>
+						</a>
+						<a class="btn-wishlist" href="#">
+						<i class="fa-solid fa-star"></i><span>Wishlist</span>
+						</a>
+						<a class="btn-buy" href="cart.html">
+						Buy Me!
+						</a>
+						</div>
+				</div>
+			</div>
+			<div class="card">
+				<img class="book-cover" src="images/image4.jpg" alt="">
+				<div class="book-info">
+					<p>
+						Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+						Ullam aspernatur odio itaque <span></span> earum laborum iusto veniam 
+						molestias ad. Autem tempore cupiditate, fuga 
+						delectus architecto iste libero! Voluptate, laudantium ratione.</span>
+						<span class="read-more"><a href="#">Read More..</a></span>
+					</p>
+					<!-- inside of div under the image -->
+					<!-- Text for button set to span for adjustment -->
+						<div class="buttons">
+						<a class="btn-cart" href="#"">
+						<i class="fa-solid fa-cart-shopping"></i><span>Add to cart</span>
+						</a>
+						<a class="btn-wishlist" href="#">
+						<i class="fa-solid fa-star"></i><span>Wishlist</span>
+						</a>
+						<a class="btn-buy" href="cart">
+						Buy Me!
+						</a>
+						</div>
+				</div>
+			</div>
+		</div>
+		<script src="https://kit.fontawesome.com/92676b54ae.js" crossorigin="anonymous"></script>
+		
+	</section>
+	
+
+	<section class="features">
+		<h3 class="title">Easy Payment Options</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id felis et ipsum bibendum ultrices. Morbi vitae pulvinar velit. Sed aliquam dictum sapien, id sagittis augue malesuada eu.</p>
+		<hr>
+
+		<ul class="grid">
+			<li>
+				<i class="fa-solid fa-credit-card"></i>
+				<h4>Cards</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id felis et ipsum bibendum ultrices vitae pulvinar velit.</p>
+			</li>
+			<li>
+				<i class="fa-solid fa-truck"></i>
+				<h4>Cash on Delivery</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id felis et ipsum bibendum ultrices vitae pulvinar velit.</p>
+			</li>
+			<li>
+				<i class="fa-brands fa-cc-paypal"></i>
+				<h4>PayPal and more!</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id felis et ipsum bibendum ultrices vitae pulvinar velit.</p>
+			</li>
+		</div>
+	</section>
+
+
+	<section class="reviews">
+		<h3 class="title">What others say:</h3>
+
+		<p class="quote">Mauris sit amet mauris a arcu eleifend ultricies eget ut dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+		<p class="author">— Patrick Farrell</p>
+
+		<p class="quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id felis et ipsum bibendum ultrices. Morbi vitae pulvinar velit. Sed aliquam dictum sapien, id sagittis augue malesuada eu.</p>
+		<p class="author">— George Smith</p>
+
+		<p class="quote">Donec commodo dolor augue, vitae faucibus tortor tincidunt in. Aliquam vitae leo quis mi pulvinar ornare. Integer eu iaculis metus.</p>
+		<p class="author">— Kevin Blake</p>
+
+		
+	</section>
+
+
+	<section class="contact">
+		<h3 class="title">Join our newsletter</h3>	
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id felis et ipsum bibendum ultrices. Morbi vitae pulvinar velit. Sed aliquam dictum sapien, id sagittis augue malesuada eu.</p>
+		<hr>
+
+		<form>
+			<input type="email" placeholder="Email">
+			<a href="#" class="btn">Subscribe now</a>
+		</form>
+	</section>
+
+	<footer>
+		<ul>
+			<li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
+			<li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+			<li><a href="#"><i class="fa fa-snapchat-square"></i></a></li>
+			<li><a href="#"><i class="fa fa-pinterest-square"></i></a></li>
+			<li><a href="#"><i class="fa fa-github-square""></i></a></li>
+		</ul>
+		<p>Made by <a href="http://www.facebook.com/pelausa" target="_blank">Dennis P</a>. Courtesy of Ms Kai and Sir Felix.</p>
+		<p>Created 10/16/2022</p>
+	</footer>
+
+</body>
+
+</html>

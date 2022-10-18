@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+
+	<header>
+        <div id="brand"><h2><a href="#">Books4U</a></h2></div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#catalog">Catalog</a></li>
+            <li><a href=#">About</a></li>
+            <li id="#"><a href="#" >Login</a></li>
+            <li id="#"><a href="#">Signup</a></li>
+			<li id="#"><i class="fa-solid fa-cart-shopping"></i></li>
+          </ul>
+        </nav>
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+          <ul class="mobile-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html/#catalog">Catalog</a></li>
+            <li><a href="#">About</a></li>
+            <li id="login"><a href="/login" >Login</a></li>
+            <li id="signup"><a href="/signup">Signup</a></li>
+          </ul>
+        </div>
+      </header>
+      <script src="index.js"></script>
+      <div class="main-content">
+        <script src="https://kit.fontawesome.com/92676b54ae.js" crossorigin="anonymous"></script>
+        <!-- You only need this form and the form-register.css -->
+
+        <form class="form-register" method="post" action="#">
+
+            <div class="form-register-with-email">
+
+                <div class="form-white-background">
+
+                    <div class="form-title-row">
+                        <h1>Create an account</h1>
+                    </div>
+
+                    <div class="form-row">
+                        <label>
+                            <span>Name</span>
+                            <input type="text" name="name">
+                        </label>
+                    </div>
+
+                    <div class="form-row">
+                        <label>
+                            <span>Email</span>
+                            <input type="email" name="email">
+                        </label>
+                    </div>
+
+                    <div class="form-row">
+                        <label>
+                            <span>Password</span>
+                            <input type="password" name="password">
+                        </label>
+                    </div>
+
+                    <div class="form-row">
+                        <label class="form-checkbox">
+                            <input type="checkbox" name="checkbox" checked>
+                            <span>I agree to the <a href="#">terms and conditions</a></span>
+                        </label>
+                    </div>
+
+                    <div class="form-row">
+                        <button type="submit">Register</button>
+                    </div>
+
+                </div>
+
+                <a href="#" class="form-log-in-with-existing">Already have an account? Login here &rarr;</a>
+
+            </div>
+
+            <div class="form-sign-in-with-social">
+
+                <div class="form-row form-title-row">
+                    <span class="form-title">Sign in with</span>
+                </div>
+
+                <a href="#" class="form-google-button">Google</a>
+                <a href="#" class="form-facebook-button">Facebook</a>
+                <a href="#" class="form-twitter-button">Twitter</a>
+
+            </div>
+
+        </form>
+
+    </div>
+      <footer>
+		<ul>
+			<li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
+			<li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+			<li><a href="#"><i class="fa fa-snapchat-square"></i></a></li>
+			<li><a href="#"><i class="fa fa-pinterest-square"></i></a></li>
+			<li><a href="#"><i class="fa fa-github-square""></i></a></li>
+		</ul>
+		<p>Made by <a href="http://www.facebook.com/pelausa" target="_blank">Dennis P</a>. Courtesy of Ms Kai and Sir Felix.</p>
+		<p>Created 10/16/2022</p>
+	</footer>
+
+</body>
+
+</html>

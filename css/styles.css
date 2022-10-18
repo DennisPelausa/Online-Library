@@ -1,0 +1,1010 @@
+/*-------------
+ 	General
+-------------*/
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html{
+	font: normal 16px sans-serif;
+	color: #555;
+}
+
+ul, nav{
+	list-style: none;
+	list-style: none;
+  	height: 100%;
+  	display: flex;
+  	align-items: center;
+  	justify-content: space-around;
+}
+
+ul a {
+	color: white;
+  }
+  
+  ul li {
+	padding: 5px;
+	margin-left: 10px;
+  }
+  
+  ul li:hover {
+	transform: scale(1.1);
+	transition: 0.3s;
+  }
+  
+  #login,
+  #signup {
+	border-radius: 5px;
+	padding: 5px 8px;
+  }
+  
+  #login {
+	border: 1px solid #498afb;
+  }
+  
+  #signup {
+	border: 1px solid #ff3860;
+  }
+  
+  #signup a {
+	color: #ff3860;
+  }
+  
+  #login a {
+	color: #b0db16;
+  }
+  
+  #hamburger-icon {
+	margin: auto 0;
+	display: none;
+	cursor: pointer;
+  }
+  
+  #hamburger-icon div {
+	width: 35px;
+	height: 3px;
+	background-color: rgb(221, 57, 57);
+	margin: 6px 0;
+	transition: 0.4s;
+  }
+  
+  .open .bar1 {
+	-webkit-transform: rotate(-45deg) translate(-6px, 6px);
+	transform: rotate(-45deg) translate(-6px, 6px);
+  }
+  
+  .open .bar2 {
+	opacity: 0;
+  }
+  
+  .open .bar3 {
+	-webkit-transform: rotate(45deg) translate(-6px, -8px);
+	transform: rotate(45deg) translate(-6px, -8px);
+  }
+  
+  .open .mobile-menu {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+  }
+  
+  .mobile-menu {
+	display: none;
+	position: absolute;
+	top: 60px;
+	left: 0;
+	height: calc(100vh - 60px);
+	width: 100%;
+	background-color: gray;
+  }
+  
+  .mobile-menu li {
+	margin-bottom: 10px;
+  }
+  
+  @media only screen and (max-width: 600px) {
+	header nav {
+	  display: none;
+	}
+  
+	#hamburger-icon {
+	  display: block;
+	}
+  }
+  
+
+a{
+	text-decoration: none;
+	color: inherit;
+	cursor: pointer;
+
+	opacity: 0.9;
+}
+
+a:hover{
+	opacity: 1;
+}
+
+a.btn{
+	color: #fff;
+	border-radius: 4px;
+	text-transform: uppercase;
+	background-color: #2196F3;
+	font-weight: 800;
+	text-align: center;
+}
+
+hr{
+	width: 150px;
+	height: 2px;
+	background-color: #2196F3;
+	border: 0;
+	margin-bottom: 80px;
+}
+
+section{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	padding: 100px 80px;
+}
+
+@media (max-width: 1000px){
+
+	section{
+		padding: 100px 50px;
+	}
+
+}
+
+@media (max-width: 600px){
+
+	section{
+		padding: 80px 30px;
+	}
+
+}
+
+section h3.title{
+	color: #414a4f;
+	text-transform: capitalize; 
+	font: bold 32px 'Open Sans', sans-serif;
+	margin-bottom: 35px;
+	text-align: center;
+}
+
+section p{
+	max-width: 800px;
+	text-align: center;
+	margin-bottom: 35px;
+	padding: 0 20px;
+	line-height: 2;
+}
+
+ul.grid{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+
+/*-------------
+ 	Header
+-------------*/
+
+header{
+	position: fixed;
+	z-index: 10;
+	width: 100%;
+	height: 60px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: #fff;
+	background-color: #333;
+	padding: 0 20px;
+}
+
+header a {
+	text-decoration: none;
+  }
+
+#brand {
+	font-weight: bold;
+	font-size: 18px;
+	display: flex;
+	align-items: center;
+  }
+  
+#brand a {
+	color: #09c372;
+  }
+
+header h2{
+	font-family: 'Quicksand', sans-serif;
+}
+
+header nav{
+	display: flex;
+	
+}
+
+header nav li{
+	margin: 0 15px;
+}
+
+header nav li:first-child{
+	margin-left: 0;	
+}
+
+header nav li:last-child{
+	margin-right: 0;	
+}
+
+
+
+ @media (max-width: 1000px){
+	header{
+		padding: 20px 50px;
+	}
+} 
+
+
+@media (max-width: 600px){
+	header nav{
+		display: none;		
+	}
+
+	header h2{
+		margin-bottom: 10px;
+	}
+}
+
+
+
+/*----------------
+ 	Hero Section
+----------------*/
+
+.hero{
+	position: relative;
+	justify-content: center;
+	min-height: 100vh;
+	color: #fff;
+	text-align: center;
+}
+
+.hero .background-image{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-color: #2196F3;
+	z-index: -1;
+}
+
+.hero .background-image:after{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #414a4f;
+	opacity: 0.75;
+}
+
+.hero h1{
+	font: bold 60px 'Open Sans', sans-serif;
+	margin-bottom: 15px;
+}
+
+.hero h3{
+	font: normal 28px 'Open Sans', sans-serif;
+	margin-bottom: 40px;
+}
+
+.hero a.btn{
+	padding: 20px 46px;
+}
+
+@media (max-width: 800px){
+
+	.hero{
+		min-height: 600px;
+	}
+
+	.hero h1{
+		font-size: 48px;
+	}
+
+	.hero h3{
+		font-size: 24px;
+	}
+
+	.hero a.btn{
+		padding: 15px 40px;
+	}
+
+}
+
+
+
+/*--------------------
+ 	Our Work Section
+---------------------*/
+
+.оur-work{
+	background-color: #fff;
+}
+
+.book-container {
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    border-radius: 20px;
+}
+
+/* check yung height and set it to auto */
+.book-container .card {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(153, 202, 202);
+    width: 250px;
+    height: auto;
+    margin: 20px 10px;
+    border-radius: 22px;
+}
+
+/* size of the image */
+.book-cover {
+    width: 100%;
+    height: 410px;
+    border-radius: 20px;
+}
+
+/* Flex 1 for auto adjustment nung content */
+.book-info { 
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-between;
+}
+
+.book-info p {
+    padding: 0 12px;
+    text-align: center;
+}
+
+.book-info .read-more {
+    display: none;
+}
+
+/* button size and alignment inside of div */
+/* height for the button important */
+.buttons {
+    display: flex;
+    width: 100%;
+    height: 60px;
+    
+}
+
+/* inside button style */
+
+.btn-cart {
+    background-color: rgb(74, 250, 250);
+    color: rgb(80, 54, 22);
+    text-decoration: none;
+    flex-grow: 2;
+    font-size: smaller;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 0 20px;
+}
+
+.btn-cart:hover {
+	background-color: #555;
+	color: yellow;
+}
+
+.btn-wishlist {
+    background-color: rgb(74, 250, 250);
+    color: rgb(43, 61, 61);
+    text-decoration: none;
+    flex-grow: 2;
+    font-size: smaller;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-wishlist:hover {
+	background-color: #555;
+	color: yellow;
+}
+
+.btn-buy {
+    background-color: rgb(82, 81, 94);
+    color: rgb(150, 238, 209);
+    text-decoration: none;
+    flex-grow: 3;
+    font-size: smaller;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 22px 0;
+    }
+
+.btn-buy:hover {
+	background-color: #b6c3cd;
+	color: red;
+}
+
+.buttons i {
+    font-size: large;
+    margin-bottom: 5px;
+}
+
+/* MEDIA MEDIA MEDIA MEDIA*/
+
+@media (max-width: 600px) {
+    
+    .book-container {
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .book-container .card {
+        flex-direction: row;
+        height: auto;
+        width: 90%;
+    }
+    .book-cover {
+        height: auto;
+        width: 160px;
+        border-radius: 20px 0 0 20px;
+    }
+    .book-info {
+        background-color: beige;
+        border-radius: 0 20px 20px 0;
+        flex: 1;
+    }
+    .book-info span {
+        display: none;
+    }
+    .btn-cart {
+        border-radius: 0;
+    }
+    .book-info .read-more {
+        display: block;
+    }
+    
+}
+
+/* Search box */
+.form-search{
+    margin: 0 auto;
+    text-align: center;
+	display: flex;
+
+    font: bold 13px sans-serif;
+    max-width: 325px;
+    position: relative;
+}
+
+.form-search input{
+    width: 800px;
+    box-sizing: border-box;
+    border-bottom-left-radius: 2px;
+    border-top-left-radius: 2px;
+    background-color:  #ffffff;
+    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+    padding: 14px 15px 14px 40px;
+    border: 1px solid #b6c3cd;;
+    border-right: 0;
+    color:#4E565C;
+    outline: none;
+    -webkit-appearance: none;
+}
+
+.form-search button{
+    border-bottom-right-radius: 2px;
+    border-top-right-radius: 2px;
+    background-color:  #6caee0;
+    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+    color: #ffffff;
+    padding: 15px 22px;
+    margin-left: -4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.form-search i{
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    font-size: 16px;
+    color: #80A3BD;
+}
+
+/* Placeholder color */
+
+.form-search input::-webkit-input-placeholder {
+    color:  #879097;
+}
+
+.form-search input::-moz-placeholder {
+    color:  #879097;
+    opacity: 1;
+}
+
+.form-search input:-ms-input-placeholder {
+    color:  #879097;
+}
+
+
+/* ------------------------- */
+
+/*----------------------
+ 	Payment Feature
+----------------------*/
+
+.features{
+	background-color: #f7f7f7;
+}
+
+.features .grid li{
+	padding: 0 30px;
+	flex-basis: 33%;
+	text-align: center;
+}
+
+.features .grid li i{
+    font-size: 50px;
+    color: #2196F3;
+    margin-bottom: 25px;
+}
+
+.features .grid li h4{
+	color: #555;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.features .grid li p{
+    margin: 0;
+}
+
+@media (max-width: 1000px){
+
+	.features .grid li{
+		flex-basis: 70%;
+		margin-bottom: 65px;
+	}
+
+	.features .grid li:last-child{
+		margin-bottom: 0;
+	}
+
+}
+
+
+@media (max-width: 600px){
+
+	.features .grid li{
+		flex-basis: 100%;
+	}
+
+}
+
+
+/*--------------------
+ 	Reviews Section
+--------------------*/
+
+.reviews{
+	background-color: #fff;
+}
+
+.reviews .quote{
+	text-align: center;
+	width: 80%;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+.reviews .author{
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+
+.reviews .author:last-child{
+    margin-bottom: 0;
+}
+
+@media (max-width: 1000px){
+
+	.reviews .quote{
+		font-size: 20px;
+	}
+
+	.reviews .author{
+	    font-size: 16px;
+	}
+
+}
+
+
+
+/*---------------------
+ 	Contact Section
+---------------------*/
+
+.contact{
+	background-color: #f7f7f7;
+}
+
+.contact form{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+
+	max-width: 800px;
+	width: 80%;
+}
+
+.contact form input{
+	padding: 15px;
+	flex: 1;
+	margin-right: 30px;
+	font-size: 18px;
+	color: #555;
+}
+
+.contact form .btn{
+	padding: 18px 42px;
+}
+
+
+@media (max-width: 800px){
+
+	.contact form input{
+		flex-basis: 100%;
+		margin: 0 0 20px 0;
+	}
+
+}
+
+
+
+
+/*-------------
+ 	Footer
+-------------*/
+
+footer{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	color: #fff;
+	background-color: #414a4f;
+	padding: 60px 0;
+}
+
+footer ul{
+	display: flex;
+	margin-bottom: 25px;
+	font-size: 32px;
+}
+
+footer ul li{
+	margin: 0 8px;	
+}
+
+footer ul li:first-child{
+	margin-left: 0;	
+}
+
+footer ul li:last-child{
+	margin-right: 0;	
+}
+
+footer p{
+	text-transform: uppercase;
+	font-size: 14px;
+	color: rgba(255,255,255,0.6);
+	margin-bottom: 10px;
+}
+
+footer p a{
+	color: #fff;
+}
+
+@media (max-width: 700px){
+
+	footer{
+		padding: 80px 15px;
+	}
+
+}
+
+
+/* -- Demo ads -- */
+
+@media (max-width: 1200px) {
+	#bsaHolder{ display:none;}
+}
+
+/* Login */
+.form-register{
+    max-width: 1000px;
+    width: 100%;
+    
+
+    font: bold 14px sans-serif;
+    text-align: center;
+}
+
+.form-register-with-email{
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 130px;
+    text-align: center;
+}
+
+.form-register-with-email .form-white-background{
+    width: 570px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+    padding: 60px 80px;
+	margin-top: 50px;
+    margin-bottom: 35px;
+}
+
+.form-register-with-email .form-row{
+    text-align: left;
+    margin-bottom: 23px;
+}
+
+.form-register-with-email .form-title-row{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.form-register-with-email h1{
+    display: inline-block;
+    box-sizing: border-box;
+    color:  #4c565e;
+    font-size: 24px;
+    padding: 0 20px 15px;
+    border-bottom: 2px solid #6caee0;
+    margin: 0;
+}
+
+.form-register-with-email .form-row > label span{
+    display: inline-block;
+    box-sizing: border-box;
+    color:  #5f5f5f;
+    width: 125px;
+    text-align: right;
+    padding-right: 25px;
+}
+
+.form-register-with-email input{
+    color:  #5f5f5f;
+    box-sizing: border-box;
+    width: 230px;
+    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+    padding: 12px 18px;
+    border: 1px solid #dbdbdb;
+}
+
+.form-register-with-email .form-checkbox input{
+    margin-left: 128px;
+    margin-right: 10px;
+    width: auto;
+    vertical-align: top;
+}
+
+.form-register-with-email .form-row .form-checkbox span{
+    font-size: 12px;
+    font-weight: normal;
+    display: inline-block;
+    text-align: left;
+    width: 220px;
+    margin: 0;
+}
+
+.form-register-with-email .form-checkbox span a{
+    text-decoration: none;
+    color:  #6caee0;
+}
+
+.form-register-with-email button{
+    display: block;
+    border-radius: 2px;
+    background-color:  #6caee0;
+    color: #ffffff;
+    font-weight: bold;
+    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+    padding: 15px 35px;
+    border: 0;
+    margin: 55px auto 0;
+    cursor: pointer;
+}
+
+.form-register-with-email .form-log-in-with-existing{
+    text-decoration: none;
+    padding: 4px 8px;
+    font-weight: normal;
+    color: #7b9d62;
+    background-color: #d6f0c3;
+	margin-bottom: 5px;
+}
+
+.form-register-with-email:after{
+    content: 'OR';
+    position: absolute;
+    bottom: 330px;
+    right: -100px;
+
+    border-radius: 50%;
+    background-color: #edeca5;
+    width: 50px;
+    height: 50px;
+    color: #93923b;
+    font-size: 17px;
+    line-height: 50px;
+}
+
+.form-sign-in-with-social{
+    display: inline-block;
+    max-width: 180px;
+    box-sizing: border-box;
+    vertical-align: top;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.form-sign-in-with-social .form-title-row{
+    margin-bottom: 50px;
+}
+
+.form-sign-in-with-social .form-title{
+    box-sizing: border-box;
+    color:  #4c565e;
+    font-size: 24px;
+    padding: 15px 20px;
+    border-bottom: 2px solid #6caee0;
+}
+
+.form-sign-in-with-social .form-google-button{
+    color:  #ffffff;
+    display: block;
+    width: 145px;
+    height: 40px;
+    font-size: 12px;
+    line-height: 40px;
+    background-color:  rgba(222, 110, 60, 0.9);
+    box-shadow: 1px 2px 2px 0 rgba(0, 0, 0, 0.08);
+    border-radius: 2px;
+    margin: 8px auto;
+    text-decoration: none;
+}
+
+.form-sign-in-with-social .form-facebook-button{
+    color:  #ffffff;
+    display: block;
+    width: 145px;
+    height: 40px;
+    font-size: 12px;
+    line-height: 40px;
+    background-color:  rgba(75, 136, 194, 0.9);
+    box-shadow: 1px 2px 2px 0 rgba(0, 0, 0, 0.08);
+    border-radius: 2px;
+    margin: 8px auto;
+    text-decoration: none;
+}
+
+.form-sign-in-with-social .form-twitter-button{
+    color:  #ffffff;
+    display: block;
+    width: 145px;
+    height: 40px;
+    font-size: 12px;
+    line-height: 40px;
+    background-color:  rgba(123, 195, 226, 0.9);
+    box-shadow: 1px 2px 2px 0 rgba(0, 0, 0, 0.08);
+    border-radius: 2px;
+    margin: 8px auto;
+    text-decoration: none;
+}
+
+/*	Making the form responsive. Remove these media queries
+    if you don't need the form to work on mobile devices. */
+
+@media (max-width: 900px) {
+
+    .form-register{
+        margin: 20px auto;
+    }
+
+    .form-register-with-email{
+        position: relative;
+        display: block;
+        margin: 0;
+    }
+
+    .form-register-with-email .form-white-background{
+        margin: 0 auto 32px;
+    }
+
+    .form-register-with-email:after{
+        bottom: -80px;
+        left: 50%;
+        margin-left: -25px;
+    }
+
+    .form-sign-in-with-social {
+        margin-top: 105px;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .form-register-with-email .form-white-background{
+        width: 300px;
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+
+    .form-register-with-email .form-row > label span{
+        display: block;
+        text-align: left;
+        padding: 0 0 10px;
+    }
+
+    .form-register-with-email input{
+        display: block;
+        margin: 0 auto;
+    }
+
+    .form-register-with-email .form-checkbox input{
+        display: inline-block;
+        margin-left: 0;
+    }
+
+    .form-register-with-email .form-checkbox span{
+        width: 200px !important;
+    }
+
+    .form-register-with-email:after{
+        bottom: -80px;
+        left: 50%;
+        margin-left: -25px;
+    }
+
+}
